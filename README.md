@@ -1,0 +1,1 @@
+# Middle-Class-Property-Residentials

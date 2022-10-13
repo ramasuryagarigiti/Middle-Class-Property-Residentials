@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static\css\icon.svg"/>
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="static\css\bootstrap.css" >
+
+<!--    stop loading-->
+<!--    <script type="text/javascript">-->
+<!--        function disableBack() { window.history.forward(); }-->
+<!--        setTimeout("disableBack()", 0);-->
+<!--        window.onunload = function () { null };-->
+<!--    </script>-->
+
+
+</head>
+<body style="background-color: #e9ecef;">
+
+    <legend>
+
+
+
+            <div class="jumbotron">
+                  <div id="alrt" class="alert alert-dark collapse" >
+<!--                    Email will be sent soon after verification.Now you can <a href="/admdash" class="alert-link">go back.</a>.-->
+            <a href="" class="close" data-dismiss="alert">&times;</a>
+                    Email will be sent soon after verification. redirecting you to <a href="/admdash">your dashboard.</a>
+                </div>
+<form method="post">
+  <h1 class="display-4">Forgot Password</h1>
+  <p class="lead">Please provide email associated with this account.</p>
+    <p>After providing your email address you will be redirected to your dashboard.</p>
+  <hr class="my-4">
+                <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="email" class="form-control" placeholder="Email" name="eml" required/>
+                    </div>
+     <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="password" class="form-control" placeholder="Desired Pin" name="pswd" required/>
+                    </div>
+     <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="password" class="form-control" placeholder="Confirm Your Desired Pin" name="pswd1" required/>
+                    </div>
+<!--#8DE76B-->
+  <p class="lead">
+<!--    <button type="button" onclick="abc()" style="align:centre" class="btn btn-outline-dark">submit</button>-->
+                <div class="col-md-12 text-center">   <button id="sub" onclick="abc()" type="submit" class="btn btn-outline-dark btn-lg">submit</button></div>
+  </p>
+<p><strong style="color:#5EB3CF;">Note:Your pin changes only if you have an admin account in this site.</strong></p>
+ </form>
+            </div>
+
+    </legend>
+
+
+
+
+<script type="text/javascript">
+	function abc(){
+	alert('Email will be sent if this email exists with this site.Thank you for using our site!');
+
+	};
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('#sub').click(function() {
+	        $('#alrt').show('fade');
+	        });
+	        });
+	</script>
+
+</body>
+</html>
